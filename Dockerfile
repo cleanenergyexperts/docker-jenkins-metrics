@@ -9,3 +9,18 @@ RUN cd /tmp && \
     wget http://chromedriver.storage.googleapis.com/2.9/chromedriver_linux64.zip && \
     unzip chromedriver_linux64.zip && \
     mv chromedriver /usr/local/bin
+
+# Install Required Gems
+RUN gem install nokogiri -v '1.6.8' && \
+    gem install rspec -v '3.5.0' && \
+    gem install capybara -v '2.7.1' && \
+    gem install capybara-webkit -v '1.11.1' && \
+    gem install dotenv -v '2.1.1' && \
+    gem install activesupport -v '5.0.0' && \
+    gem install addressable -v '2.4.0' && \
+    gem install aws-sdk -v '2.4.4' && \
+    gem install headless -v '2.2.3' && \
+    gem install watir-webdriver -v '0.9.3' && \
+    gem install watir-webdriver-performance -v '0.2.4' && \
+    gem install therubyracer -v '0.12.2' && \
+    gem install oj -v '2.17.1'
