@@ -13,6 +13,7 @@ RUN cd /tmp && \
 # Install Required Gems
 RUN gem install nokogiri -v '1.6.8' && \
     gem install rspec -v '3.5.0' && \
+    gem install json -v '2.0.2' && \
     gem install capybara -v '2.7.1' && \
     gem install capybara-webkit -v '1.11.1' && \
     gem install dotenv -v '2.1.1' && \
